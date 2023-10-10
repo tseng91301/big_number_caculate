@@ -128,7 +128,12 @@ vector<int> vtime(vector<int> iv1,vector<int> iv2){
     return out;
 }
 int main(){
-    string num1="12345678901234567890123456789012345678901234567890";
-    string num2="98765432109876543210987654321098765432109876543210";
-    cout<<vtos(vtime(stov(num1),stov(num2)))<<endl;
+    string num1;
+    string num2;
+    cout<<"This is the program to compute the multiplication of two extreme large numbers :-)"<<endl;
+    cout<<"Please input first number: ";
+    cin>>num1;
+    cout<<"Please input second number: ";
+    cin>>num2;
+    cout<<"The answer is: "<<vtos(vtime(stov(num1),stov(num2)))<<endl;
 }
